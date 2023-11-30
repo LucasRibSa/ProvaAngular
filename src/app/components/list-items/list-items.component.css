@@ -1,0 +1,25 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+.lista {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.botao {
+    margin-left: 25px;
+    background-color: #0f0;
+}
+.botao-delete {
+    margin-left: 35px;
+    background-color: #f00;
+}
+.checked {
+    background-color: #ff0;
+  }
+.addTarefa {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

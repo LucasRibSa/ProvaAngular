@@ -1,3 +1,27 @@
-<div class="lista">
-    <p>Minha lista</p>
+<div class="titulo">
+    <h2>Minha lista:</h2>
 </div>
+<div class="lista">
+    <table>
+        <tr class="tabela">
+          <th>Nome:</th>
+          <th>Tipo:</th>
+        </tr>    
+        <tr class="tabela" *ngFor="let item of itens" [class.checked]="item.checked">
+          <td>{{item.name}}</td>
+          <td>{{item.type}}</td>
+          <td>
+            <button class="botao" (click)="marcarItem(item)">Check</button>
+            <button class="botao-delete" (click)="removerItem(item)">Delete</button>
+          </td>
+        </tr>
+    </table>
+</div>
+<div class="addTarefa">
+    <label for="novaTarefa">Adicionar Tarefa:</label>
+    <input type="text" id="novaTarefa" [(ngModel)]="novoItem" maxlength="100">
+    <label for="Tipo">Tipo:</label>
+    <input type="text" id="novoTipo" [(ngModel)]="novoTipo" maxlength="100">
+    <button class="botao" (click)="adicionarTarefa()">Adicionar Tarefa</button>
+</div>
+

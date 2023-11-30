@@ -1,25 +1,69 @@
+.box {
+    background-color: #cacaca;
+    height: 700px;
+}
 .titulo {
     display: flex;
     justify-content: center;
 }
 .lista {
+    background-color: #af69cd;
     display: flex;
+    font-size: 18px;
     justify-content: center;
     margin-top: 40px;
 }
 .botao {
     margin-left: 25px;
     background-color: #0f0;
+
 }
 .botao-delete {
-    margin-left: 35px;
+    margin-left: 30px;
+    padding: 8px;
+    cursor: pointer;
     background-color: #f00;
+    border: none;
+    border-radius: 4px;
 }
-.checked {
-    background-color: #ff0;
-  }
+
 .addTarefa {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    gap: 10px;
 }
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  .cabecalho-tabela th, .linha-tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .cabecalho-tabela th {
+    background-color: #9b9b9b;
+  }
+  
+  .botao {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .botao:hover {
+    background-color: #217dbb;
+  }
+  .botao-delete:hover {
+    background-color: rgb(166, 80, 80);
+  }
+  .checked {
+    background-color: yellow;
+
+  }

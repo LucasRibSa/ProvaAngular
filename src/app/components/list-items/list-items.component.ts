@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+//Definindo interface do Item
 
 export interface Item {
-  name: string;
-  type: string;
-  checked: boolean;
+  name: string;               //Nome do item
+  type: string;               //Tipo do item
+  checked: boolean;           // Boolean para marcar se a atividade foi concluída ou não
 }
 
 @Component({
@@ -13,20 +14,21 @@ export interface Item {
 })
 
 export class ListItemsComponent {
-
+// Iniciando os Inputs vazios
   novoItem: string = '';
   novoTipo: string = '';
-
+//Função para adicionar uma nota tarefa
   adicionarTarefa() {
     if (this.novoItem.trim() !== '' && this.novoTipo.trim() !== '') {
-      // Adicione uma nova tarefa à lista
+      // Método para adicionar novo item na lista
       this.itens.push({ name: this.novoItem, type: this.novoTipo, checked: false });
 
-      // Limpe os inputs após adicionar a tarefa
+      // Limpar os inputs após adicionar o novo item
       this.novoItem = '';
       this.novoTipo = '';
     }
   }
+  //função para remover o item
   removerItem(item: Item) {
     const index = this.itens.indexOf(item);
     if (index !== -1) {
@@ -34,13 +36,14 @@ export class ListItemsComponent {
     }
   }
 
+  //Adicionando um array de objeto
   itens: Item[] = [
     {name: 'arrumar a cama', type: 'tarefas', checked: false },
     {name: 'lavar a roupa', type: 'tarefas', checked: false },
     {name: 'fazer o amoço', type: 'tarefas', checked: false},
     {name: 'jogar bola', type: 'lazer', checked: false}
   ] 
-
+  //função para marcar o item
   marcarItem(item: Item) {
     item.checked = !item.checked;
   }

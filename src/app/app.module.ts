@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListItemsComponent } from './components/list-items/list-items.component';
+import { FormCadastroComponent } from './components/form-cadastro/form-cadastro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListItemsComponent
+    ListItemsComponent,
+    FormCadastroComponent
   ],
   imports: [
     FormsModule,

@@ -17,11 +17,9 @@ export class FormCadastroComponent {
 
   submitForm() {
     if (this.usuario.nome && this.usuario.email && this.usuario.senha) {
-      // Todos os campos estão preenchidos
       this.mensagem = `Olá, ${this.usuario.nome}! Cadastro realizado com sucesso.`;
       this.classeMensagem = 'verde';
     } else {
-      // Campos não preenchidos
       this.mensagem = 'Olá, por favor, informe todos os campos corretamente.';
       this.classeMensagem = 'vermelho';
     }

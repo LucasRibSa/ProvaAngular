@@ -15,7 +15,7 @@ import { ContadorComponentComponent } from './components/contador-component/cont
   declarations: [
     AppComponent,
     ListItemsComponent,
-    DadosAlunosComponent
+    DadosAlunosComponent,
     FormCadastroComponent,
     ContadorComponentComponent,
   ],

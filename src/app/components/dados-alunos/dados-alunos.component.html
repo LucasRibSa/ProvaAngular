@@ -1,20 +1,20 @@
-<table>
+<table class="custom-table">
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Matrícula</th>
-      <th>Curso</th>
-      <th>Média Global</th>
+      <th class="table-header">Nome</th>
+      <th class="table-header">Matrícula</th>
+      <th class="table-header">Curso</th>
+      <th class="table-header">Média Global</th>
     </tr>
   </thead>
   <tbody>
-    <div *ngIf="alunos">
-    <tr *ngFor="let aluno of alunos">
-      <td>{{ aluno.nome }}</td>
-      <td>{{ aluno.matricula }}</td>
-      <td>{{ aluno.curso }}</td>
-      <td>{{ calcularMediaGlobal(aluno.rendimentoEscolar) }}</td>
-    </tr>
-  </div>
+    <ng-container *ngIf="alunos">
+      <tr *ngFor="let aluno of alunos" class="table-row">
+        <td class="table-cell">{{ aluno.nome }}</td>
+        <td class="table-cell">{{ aluno.matricula }}</td>
+        <td class="table-cell">{{ aluno.curso }}</td>
+        <td class="table-cell">{{ calcularMediaGlobal(aluno.rendimentoEscolar) }}</td>
+      </tr>
+    </ng-container>
   </tbody>
 </table>

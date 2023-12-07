@@ -1,5 +1,5 @@
 .formulario {
-    background-color: rgb(91, 120, 91);
+    background-color: rgb(141, 185, 141);
 }
 
 .formulario input {
@@ -8,12 +8,13 @@
 
 .formulario div {
     margin-top: 50px;
-    margin-left: 50rem;
+    margin-left: 40%;
 }
 
 .formulario button {
-    margin-left: 55rem;
-    margin-top: 1.3rem;
+    margin-left: 45%;
+    margin-top: 2.8rem;
+
 }
 
 .botao {
@@ -29,20 +30,17 @@
   }
 
 .mensagem {
-    padding: 10px;
-    margin-right: 50rem;
+    margin-right: 5rem;
     border-radius: 4px;
   }
   
   .verde {
     background-color: #d4edda;
-    border-color: #c3e6cb;
     color: #155724;
   }
   
   .vermelho {
     background-color: #f8d7da;
-    border-color: #f5c6cb;
     color: #721c24;
   }
   

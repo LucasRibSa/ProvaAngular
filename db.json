@@ -1,0 +1,26 @@
+{
+  "alunos": [
+    {
+      "matricula": 12345,
+      "nome": "João Silva",
+      "idade": 20,
+      "curso": "Engenharia da Computação",
+      "rendimentoEscolar": {
+        "POO": 8.0,
+        "Front-end": 8.0,
+        "Back-end": 8.0
+      }
+    },
+    {
+      "matricula": 23456,
+      "nome": "Maria Souza",
+      "idade": 21,
+      "curso": "Ciência da Computação",
+      "rendimentoEscolar": {
+        "POO": 8.0,
+        "Front-end": 8.0,
+        "Back-end": 8.0
+      }
+    }
+  ]
+}

@@ -7,7 +7,7 @@
     justify-content: center;
 }
 .lista {
-    background-color: #af69cd;
+    background-color: #e5991e;
     display: flex;
     font-size: 18px;
     justify-content: center;
@@ -46,7 +46,7 @@
   }
 
   .cabecalho-tabela th {
-    background-color: #9b9b9b;
+    background-color: rgb(64, 173, 36);
   }
   
   .botao {

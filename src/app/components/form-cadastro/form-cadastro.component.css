@@ -1,0 +1,46 @@
+.formulario {
+    background-color: rgb(141, 185, 141);
+}
+
+.formulario input {
+    margin-top: 30px;
+}
+
+.formulario div {
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+.formulario button {
+    margin-left: 45%;
+    margin-top: 2.8rem;
+
+}
+
+.botao {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .botao:hover {
+    background-color: #217dbb;
+  }
+
+.mensagem {
+    margin-right: 5rem;
+    border-radius: 4px;
+  }
+  
+  .verde {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .vermelho {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
